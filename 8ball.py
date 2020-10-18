@@ -1,4 +1,5 @@
 # This is a 8ball program. Made by Aadi Jain on the date 9.9.20
+#A virtular representation of an 8ball in python
 
                           # Yes replies
 #   As I see it, Yes. : Yes: definately : you may rely on it:without a doubt: signs point to yes: outlook yes
