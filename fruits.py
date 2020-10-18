@@ -1,4 +1,5 @@
 #open file
+#Even I have no clue whawt this is
 myfile = open("fruits.txt")
 print(myfile.read())
 myfile.close()
