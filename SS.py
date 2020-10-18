@@ -9,6 +9,7 @@
 #av = total / count
 #print(av)
 
+#Program about couting letters, words and stuff like that.
 name = input('Hello I am Aadi, this program asks you to write a couple of words and then will print out the number of word you say \n What is you name? : \n')
 print('Hello' ,name,)
 hh = input('How are you? \n >>')
