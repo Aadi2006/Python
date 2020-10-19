@@ -1,4 +1,3 @@
-#My try at artificial intelligence
 import re
 import random
 from time import sleep
@@ -57,7 +56,7 @@ elif question_for_hobs_randrange == 3:
     hobs = input("What is you favorite pastime?")
 hobs=hobs.lower()
 stop_asking = False
-if(re.search("nothing much+",hobs)):
+if re.search("nothing much+",hobs):
     print("You must be doing something worth mentioning")
     RandomNumberForNothingMuch = random.randint(0,1)
     sleep(0.5)
@@ -66,14 +65,25 @@ if(re.search("nothing much+",hobs)):
         sleep(0.5)
     print("Really, okay, no prob")
     stop_asking = True
-if(stop_asking == False):
-    if(re.search("don't|no|not",hobs) == None):
-        if(re.search('guitar|read|box|jam|code|coding',hobs)):print("Really!, me too")
+if stop_asking == False:
+    if re.search("don't|no|not",hobs) == None:
+        if re.search('guitar|read|box|jam|code|coding',hobs):print("Really!, me too")
         else:print('That great!\nThough I personally like to do play the guitar, read, box and code("This program was made by me")')
     else:
         if(re.search('guitar|read|box',hobs)):
             print("That's a pity, as I personally like to do that")
         else:
             print("That's like a pizza, great")
+if re.search('read',hobs):
+    print("Please recommend me a few books, so that I come to know more books to read!")
+    sleep(1)
+    print("BTW press enter to stop")
+    count = 1
+    while True:
+        book_question = input(f"Book{count}: ")
+        if len(book_question)==0:
+            break
+        c++
+    print("Thanks for your help")
 print('Thank you and goodbye')
 quit()
